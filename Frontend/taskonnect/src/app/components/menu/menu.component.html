@@ -1,0 +1,17 @@
+<div class="menu">
+  <div class="logo" routerLink="/main/calendar">
+    <img src="assets/logo.png" alt="Logo">
+    <h1>TasKonnect</h1>
+  </div>
+
+  <div class="user" (click)="toggleMenu()">
+    <img src="assets/user.svg" alt="user">
+  </div>
+
+  <div class="dropdown-menu" *ngIf="isMenuOpen" >
+    <ul>
+      <li routerLink="/main/editarperfil"><a >👤Editar Perfil</a></li>
+      <li routerLink="/login" (click)="cerrarSesion()">🚪Cerrar Sesión</li>
+    </ul>
+  </div>
+</div>
