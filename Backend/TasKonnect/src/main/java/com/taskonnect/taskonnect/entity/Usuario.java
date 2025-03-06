@@ -56,6 +56,6 @@ public class Usuario {
     private Date fechaCreacion;
 
     @Column(name = "fecha_modificacion")
-    private String fechaModificacion;
+    private Date fechaModificacion;
 
 }
